@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="250px" src="https://note.youdao.com/yws/api/personal/file/WEB63c44a9e93b186c27e57b735ed34523d?method=getImage&version=362&cstk=2oaEjCYG">
+  <img width="250px" src="https://github.com/LishiJ/vue-cms/blob/master/pic/logo.png?raw=true">
 </p>
 
 <p align="center">
@@ -20,15 +20,15 @@
 
 VueCola 是一个美观的后台管理系统模板，参照简称 [Eden](https://Sakuyakun.github.io/eden-docs)（伊甸园）。主要使用了 vue 框架与 element-ui 组件库开发。VueCola 在后台集成方面没有过于复杂，只包含了最基础和最常用的功能。也易移除模块，当做基础模板进行开发。登陆页参考 vue-manager。
 
-![1.png](https://note.youdao.com/yws/api/personal/file/WEB67fab1f5e54359f5ecd7b8048e3fbf09?method=getImage&version=344&cstk=2oaEjCYG)
+![1.png](https://github.com/LishiJ/vue-cms/blob/master/pic/F43F6564-A836-4389-BBAD-5A04F03CEFCA.png?raw=true)
 
-![2.png](https://note.youdao.com/yws/api/personal/file/WEBf78b7602a99874fe15e6e19dcf71ffc7?method=getImage&version=346&cstk=2oaEjCYG)
+![2.png](https://github.com/LishiJ/vue-cms/blob/master/pic/C0A32CFD-7797-499c-A217-6D079FF3D5F4.png?raw=true)
 
-![3.png](https://note.youdao.com/yws/api/personal/file/WEB90eb938b532bbd224497da65f71b27f4?method=getImage&version=345&cstk=2oaEjCYG)
+![3.png](https://github.com/LishiJ/vue-cms/blob/master/pic/4C3E7F14-11B7-4eef-9A55-E6E6888C38E9.png?raw=true)
 
-![4.png](https://note.youdao.com/yws/api/personal/file/WEBb50e12a9b554ac75d89585f8738a9d24?method=getImage&version=343&cstk=2oaEjCYG)
+![4.png](https://github.com/LishiJ/vue-cms/blob/master/pic/1815672C-688A-4c2e-9F24-5704C9D91049.png?raw=true)
 
-![5.png](https://note.youdao.com/yws/api/personal/file/WEB4897591027f0094c2fed67716f709095?method=getImage&version=342&cstk=2oaEjCYG)
+![5.png](https://github.com/LishiJ/vue-cms/blob/master/pic/743840F4-52C1-4aec-B0EE-B2BA4680FC0E.png?raw=true)
 
 VueCola拥有：
 
