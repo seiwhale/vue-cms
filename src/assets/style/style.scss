@@ -1,0 +1,93 @@
+@import './default.scss';
+
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  font-family: "PingFang SC", "Helvetica Neue", Helvetica, "Microsoft YaHei", "微软雅黑", Arial, sans-serif !important;
+  min-width: 1024px;
+  background-color: $bg-color;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#app {
+  .el-scrollbar {
+    height: 100%;
+
+    .el-scrollbar__wrap {
+      height: calc(100%+5px);
+    }
+  }
+
+  .el-menu--collapse .el-submenu__icon-arrow {
+    display: none;
+  }
+}
+
+// nprogress style
+#nprogress {
+  .bar {
+    background: $main-color !important
+  }
+
+  .peg {
+    box-shadow: 0 0 10px $main-color,
+      0 0 5px $main-color !important
+  }
+
+  .spinner-icon {
+    border-top-color: $main-color !important;
+    border-left-color: $main-color !important
+  }
+}
+
+
+// scrollbar
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: 0 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $scrollbar-thumb-bg;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: $scrollbar-thumb-hover-bg;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: $scrollbar-corner-bg;
+}
+
+::-webkit-scrollbar-resizer {
+  background-color: $scrollbar-resizer-bg
+}
+
+body::-webkit-scrollbar {
+  width: 8px；
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $body-scrollbar-thumb-bg
+}
