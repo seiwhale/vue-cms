@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  <a href="https://Sakuyakun.github.io/eden-docs">说明文档</a>
+  <a href="https://github.com/LishiJ/vue-cms/blob/master/README.md">说明文档</a>
 </p>
 
 VueCola 是一个美观的后台管理系统模板，参照简称 [Eden](https://Sakuyakun.github.io/eden-docs)（伊甸园）。主要使用了 vue 框架与 element-ui 组件库开发。VueCola 在后台集成方面没有过于复杂，只包含了最基础和最常用的功能。也易移除模块，当做基础模板进行开发。登陆页参考 vue-manager。
