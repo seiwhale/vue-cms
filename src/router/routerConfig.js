@@ -1,5 +1,6 @@
 import Home from '../views/home/index.vue';
 import Profile from '../views/profile/index.vue';
+import Widget from '../views/widget/index.vue';
 import Component1 from '../views/components/page1.vue';
 import Component2 from '../views/components/page2.vue';
 import Component3 from '../views/components/page3.vue';
@@ -28,7 +29,7 @@ export default [
   // 控件
   {
     path: '/widget',
-    component: HelloPage,
+    component: Widget,
     name: 'widget',
     meta: {
       title: 'widget',

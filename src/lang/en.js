@@ -51,8 +51,8 @@ export default {
   },
   msg: {
     msg1: 'You have a new message from Sakuya.',
-    msg2: 'Chekcout today eden system report.',
-    msg3: 'Eden system has some new update, check it.',
+    msg2: 'Chekcout today VUECOLA system report.',
+    msg3: 'VUECOLA system has some new update, check it.',
   },
   home: {
     sr: 'System Report',
@@ -60,7 +60,7 @@ export default {
     todo: 'ToDo',
   },
   lock: {
-    locked: 'Eden system has been locked!',
+    locked: 'VUECOLA system has been locked!',
     unlock: 'Unlock Successfully!',
   },
 };

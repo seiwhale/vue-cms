@@ -14,7 +14,7 @@
     "babel-plugin-component": "^1.1.1",
     "dayjs": "^1.7.7",
     "echarts": "^4.2.0-rc.2",
-    "element-ui": "^2.4.7",
+    "element-ui": "^2.11.0",
     "js-cookie": "^2.2.0",
     "normalize.css": "^8.0.0",
     "nprogress": "^0.2.0",

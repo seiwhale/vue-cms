@@ -14,8 +14,11 @@ module.exports = {
     // off或0: 禁用规则
     'linebreak-style': 'off',
     "import/no-extraneous-dependencies": 0,
-    "no-param-reassign": 1,
+    "no-param-reassign": 0,
     "no-restricted-syntax": 0,
+    "no-unused-vars": 0,
+    "max-len": 0,
+    "no-plusplus": 0,
   },
   parserOptions: {
     parser: 'babel-eslint',
