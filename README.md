@@ -6,11 +6,11 @@
   <a href="https://travis-ci.org/Sakuyakun/vue-eden">
     <img src="https://img.shields.io/travis/Sakuyakun/vue-eden.svg?style=flat-square" alt="GitHub release">
   </a>
-  <a href="https://www.codacy.com/app/Sakuyakun/vue-eden?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Sakuyakun/vue-eden&amp;utm_campaign=Badge_Grade">
+  <a href="https://www.codacy.com/app/LishiJ/vue-cms?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LishiJ/vue-cms&amp;utm_campaign=Badge_Grade">
     <img src="https://img.shields.io/codacy/grade/7f511c51cd5b4f42bf930e2bbd187e3c.svg?style=flat-square">
   </a>
-  <a href="https://github.com/Sakuyakun/vue-eden/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/Sakuyakun/vue-eden.svg?style=flat-square" alt="license">
+  <a href="https://github.com/LishiJ/vue-cms/blob/master/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="license">
   </a>
 </p>
 
