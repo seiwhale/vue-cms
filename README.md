@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://www.codacy.com/app/LishiJ/vue-cms?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LishiJ/vue-cms&amp;utm_campaign=Badge_Grade">
-    <img src="https://img.shields.io/codacy/grade/7f511c51cd5b4f42bf930e2bbd187e3c.svg?style=flat-square">
+    <img src="https://api.codacy.com/project/badge/Grade/92886eee6c2f4327bd17fff55f2af8b9"/>
   </a>
   <a href="https://github.com/LishiJ/vue-cms/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="license">
