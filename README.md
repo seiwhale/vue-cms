@@ -45,6 +45,8 @@ VueCola拥有：
 
 ## 目录结构
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6250719d0d4f49d2a5ebf17f86fbd93b)](https://app.codacy.com/app/LishiJ/vue-cms?utm_source=github.com&utm_medium=referral&utm_content=LishiJ/vue-cms&utm_campaign=Badge_Grade_Dashboard)
+
 ```
 ├── LICENSE
 ├── README.md
