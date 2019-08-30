@@ -1,3 +1,4 @@
+/* eslint-enable */
 <p align="center">
   <img width="250px" src="https://github.com/LishiJ/vue-cms/blob/master/pic/logo.png?raw=true">
 </p>
@@ -57,7 +58,7 @@ VueCola拥有：
 │   ├── favicon.ico
 │   └── index.html
 ├── src
-│   ├── App.vue         
+│   ├── App.vue
 │   ├── api            请求接口
 │   ├── assets         静态资源
 │   ├── components     组件
@@ -80,7 +81,7 @@ VueCola拥有：
 npm install
 
 # develop
-npm run serve 
+npm run serve
 
 # build for production environment
 npm run build
