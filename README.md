@@ -3,6 +3,9 @@
 </p>
 
 <p align="center">
+  <a href="https://vuecola.netlify.com/?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LishiJ/vue-cms&amp;utm_campaign=Badge_Grade">
+    <img src="https://api.netlify.com/api/v1/badges/0b11847c-f6f3-4fc0-9e36-4ccf270a20a6/deploy-status"/>
+  </a>
   <a href="https://www.codacy.com/app/LishiJ/vue-cms?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LishiJ/vue-cms&amp;utm_campaign=Badge_Grade">
     <img src="https://api.codacy.com/project/badge/Grade/92886eee6c2f4327bd17fff55f2af8b9"/>
   </a>
