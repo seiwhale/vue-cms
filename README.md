@@ -1,9 +1,9 @@
 <p align="center">
-  <img width="250px" src="https://github.com/LishiJ/vue-cms/blob/master/pic/logo.png?raw=true">
+  <img width="250px" src="https://cdn.jsdelivr.net/gh/LishiJ/vue-cms/pic/logo.png?raw=true">
 </p>
 
 <p align="center">
-  <a href="https://vuecola.netlify.com/?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LishiJ/vue-cms&amp;utm_campaign=Badge_Grade">
+  <a href="https://vuecola.netlify.com/">
     <img src="https://api.netlify.com/api/v1/badges/0b11847c-f6f3-4fc0-9e36-4ccf270a20a6/deploy-status"/>
   </a>
   <a href="https://www.codacy.com/app/LishiJ/vue-cms?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LishiJ/vue-cms&amp;utm_campaign=Badge_Grade">
@@ -20,15 +20,15 @@
 
 VueCola 是一个美观的后台管理系统模板，参照简称 [Eden](https://Sakuyakun.github.io/eden-docs)（伊甸园）。主要使用了 vue 框架与 element-ui 组件库开发。VueCola 在后台集成方面没有过于复杂，只包含了最基础和最常用的功能。也易移除模块，当做基础模板进行开发。登陆页参考 vue-manager。
 
-![1.png](https://github.com/LishiJ/vue-cms/blob/master/pic/F43F6564-A836-4389-BBAD-5A04F03CEFCA.png?raw=true)
+![1.png](https://cdn.jsdelivr.net/gh/LishiJ/vue-cms/pic/F43F6564-A836-4389-BBAD-5A04F03CEFCA.png?raw=true)
 
-![2.png](https://github.com/LishiJ/vue-cms/blob/master/pic/C0A32CFD-7797-499c-A217-6D079FF3D5F4.png?raw=true)
+![2.png](https://cdn.jsdelivr.net/gh/LishiJ/vue-cms/pic/C0A32CFD-7797-499c-A217-6D079FF3D5F4.png?raw=true)
 
-![3.png](https://github.com/LishiJ/vue-cms/blob/master/pic/4C3E7F14-11B7-4eef-9A55-E6E6888C38E9.png?raw=true)
+![3.png](https://cdn.jsdelivr.net/gh/LishiJ/vue-cms/pic/4C3E7F14-11B7-4eef-9A55-E6E6888C38E9.png?raw=true)
 
-![4.png](https://github.com/LishiJ/vue-cms/blob/master/pic/1815672C-688A-4c2e-9F24-5704C9D91049.png?raw=true)
+![4.png](https://cdn.jsdelivr.net/gh/LishiJ/vue-cms/pic/1815672C-688A-4c2e-9F24-5704C9D91049.png?raw=true)
 
-![5.png](https://github.com/LishiJ/vue-cms/blob/master/pic/743840F4-52C1-4aec-B0EE-B2BA4680FC0E.png?raw=true)
+![5.png](https://cdn.jsdelivr.net/gh/LishiJ/vue-cms/pic/743840F4-52C1-4aec-B0EE-B2BA4680FC0E.png?raw=true)
 
 VueCola拥有：
 
@@ -46,9 +46,12 @@ VueCola拥有：
 
 还有更多 ...
 
+## 预览地址
+
+[点击查看](https://vuecola.netlify.com/)
+
 ## 目录结构
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6250719d0d4f49d2a5ebf17f86fbd93b)](https://app.codacy.com/app/LishiJ/vue-cms?utm_source=github.com&utm_medium=referral&utm_content=LishiJ/vue-cms&utm_campaign=Badge_Grade_Dashboard)
 
 ```
 ├── LICENSE
