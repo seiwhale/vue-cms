@@ -1,4 +1,3 @@
-/* eslint-enable */
 <p align="center">
   <img width="250px" src="https://github.com/LishiJ/vue-cms/blob/master/pic/logo.png?raw=true">
 </p>
