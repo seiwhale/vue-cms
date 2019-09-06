@@ -3,14 +3,15 @@
 </p>
 
 <p align="center">
+
   <a href="https://vuecola.netlify.com/">
-    <img src="https://api.netlify.com/api/v1/badges/0b11847c-f6f3-4fc0-9e36-4ccf270a20a6/deploy-status"/>
+    <img src="https://img.shields.io/badge/netlify-success-brightgreen"/>
   </a>
   <a href="https://www.codacy.com/app/LishiJ/vue-cms?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LishiJ/vue-cms&amp;utm_campaign=Badge_Grade">
-    <img src="https://api.codacy.com/project/badge/Grade/92886eee6c2f4327bd17fff55f2af8b9"/>
+    <img src="https://badgen.net/codacy/grade/92886eee6c2f4327bd17fff55f2af8b9"/>
   </a>
   <a href="https://github.com/LishiJ/vue-cms/blob/master/LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="license">
+    <img src="https://badgen.net/github/license/LishiJ/vue-cms" alt="license">
   </a>
 </p>
 
@@ -18,7 +19,7 @@
   <a href="https://github.com/LishiJ/vue-cms/blob/master/README.md">说明文档</a>
 </p>
 
-VueCola 是一个美观的后台管理系统模板，参照简称 [Eden](https://Sakuyakun.github.io/eden-docs)（伊甸园）。主要使用了 vue 框架与 element-ui 组件库开发。VueCola 在后台集成方面没有过于复杂，只包含了最基础和最常用的功能。也易移除模块，当做基础模板进行开发。登陆页参考 vue-manager。
+VueCola 是一个美观的后台管理系统模板，参照 [Eden](https://Sakuyakun.github.io/eden-docs)（伊甸园）。主要使用了 vue 框架与 element-ui 组件库开发。VueCola 在后台集成方面没有过于复杂，只包含了最基础和最常用的功能。也易移除模块，当做基础模板进行开发。登陆页参考 vue-manager。
 
 ![1.png](https://cdn.jsdelivr.net/gh/LishiJ/vue-cms/pic/F43F6564-A836-4389-BBAD-5A04F03CEFCA.png?raw=true)
 
@@ -32,17 +33,17 @@ VueCola 是一个美观的后台管理系统模板，参照简称 [Eden](https:/
 
 VueCola拥有：
 
-- [x] 舒适配色与布局
-- [x] 权限控制
-- [x] 动态路由
-- [x] MOCK 数据
-- [x] 登录登出
-- [x] 界面锁定
-- [x] 伸缩侧边栏
-- [x] 自适应布局
-- [x] 页面标签控制
-- [x] 国际化多语言
-- [x] 个人中心
+- [√] 舒适配色与布局
+- [√] 权限控制
+- [√] 动态路由
+- [√] MOCK 数据
+- [√] 登录登出
+- [√] 界面锁定
+- [√] 伸缩侧边栏
+- [√] 自适应布局
+- [√] 页面标签控制
+- [√] 国际化多语言
+- [√] 个人中心
 
 还有更多 ...
 
