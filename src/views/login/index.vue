@@ -4,7 +4,7 @@
     <div class="login-header">
       <LanguageSetting class="lang" />
       <el-tooltip class="svg-github" effect="dark" content="Fork Me" placement="bottom">
-        <a href="https://github.com/LishiJ" target="_blank"><icon name="github" :scale="2.5"></icon></a>
+        <a href="https://github.com/seiwhale" target="_blank"><icon name="github" :scale="2.5"></icon></a>
       </el-tooltip>
     </div>
     <!-- 登录/忘记密码框 -->
