@@ -47,39 +47,39 @@
 </template>
 
 <script>
-import BreadCrumb from "../BreadCrumb";
-import SeamlessScroll from "../SeamlessScroll";
-import LangSetting from "../LangSetting";
-import Notice from "../Notice";
-import FullScreen from "../FullScreen";
-import PersonalInfoDrop from '../PersonalInfoDrop'
-import dayjs from "dayjs";
+import BreadCrumb from '../BreadCrumb';
+import SeamlessScroll from '../SeamlessScroll';
+import LangSetting from '../LangSetting';
+import Notice from '../Notice';
+import FullScreen from '../FullScreen';
+import PersonalInfoDrop from '../PersonalInfoDrop';
+import dayjs from 'dayjs';
 
 export default {
-  name: "Header",
+  name: 'Header',
   data() {
     return {
-      system_version: "V1.0.0",
+      system_version: 'V1.0.0',
       messageList: [
         {
-          date: dayjs().format("YYYY-MM-DD"),
-          msg: this.$t("msg.msg1")
+          date: dayjs().format('YYYY-MM-DD'),
+          msg: this.$t('msg.msg1'),
         },
         {
-          date: dayjs().format("YYYY-MM-DD"),
-          msg: this.$t("msg.msg2")
+          date: dayjs().format('YYYY-MM-DD'),
+          msg: this.$t('msg.msg2'),
         },
         {
-          date: dayjs().format("YYYY-MM-DD"),
-          msg: this.$t("msg.msg3")
-        }
-      ]
+          date: dayjs().format('YYYY-MM-DD'),
+          msg: this.$t('msg.msg3'),
+        },
+      ],
     };
   },
   methods: {
     handleSwitchNavbar() {
       this.$store.dispatch('toggleSideBar');
-    }
+    },
   },
   components: {
     BreadCrumb,
@@ -87,8 +87,8 @@ export default {
     LangSetting,
     Notice,
     FullScreen,
-    PersonalInfoDrop
-  }
+    PersonalInfoDrop,
+  },
 };
 </script>
 

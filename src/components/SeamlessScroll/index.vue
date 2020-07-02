@@ -1,6 +1,6 @@
 <template>
-  <vue-seamless 
-    :class-option="classOption" 
+  <vue-seamless
+    :class-option="classOption"
     :data="messageList"
     class="seamless-wrap"
   >
@@ -11,35 +11,36 @@
           <span class="seamless-wrap__title" v-text="item.msg"></span>
         </div>
       </li>
-    </ul>  
-  </vue-seamless> 
+    </ul>
+  </vue-seamless>
 </template>
 
 <script>
-import VueSeamless from "vue-seamless-scroll";
+import VueSeamless from 'vue-seamless-scroll';
+
 export default {
   name: 'SeamlessScroll',
   props: {
     messageList: {
       type: Array,
-      required: true
+      required: true,
     },
     singleHeight: {
       type: Number,
-      default: 20
+      default: 20,
     },
     limitMoveNum: {
       type: Number,
-      default: 3
+      default: 3,
     },
     waitTime: {
       type: Number,
-      default: 3000
+      default: 3000,
     },
     hoverStop: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
   computed: {
     classOption() {
@@ -47,13 +48,13 @@ export default {
         singleHeight: this.singleHeight,
         limitMoveNum: this.limitMoveNum,
         waitTime: this.waitTime,
-        hoverStop: this.hoverStop
-      }
-    }
+        hoverStop: this.hoverStop,
+      };
+    },
   },
   components: {
     VueSeamless,
-  }
+  },
 };
 </script>
 

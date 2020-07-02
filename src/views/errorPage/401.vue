@@ -11,14 +11,14 @@
 
 <script>
 export default {
-  name: "page401",
+  name: 'page401',
   methods: {
     returnPrevPage() {
       this.$router.push({
-        path: "/"
+        path: '/',
       });
-    }
-  }
+    },
+  },
 };
 </script>
 

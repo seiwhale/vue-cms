@@ -5,25 +5,26 @@
 </template>
 
 <script>
-import screenfull from "screenfull";
+import screenfull from 'screenfull';
+
 export default {
-  name: "fullscreen",
+  name: 'fullscreen',
   props: {
     scale: {
       type: Number,
-      default: 2.5
+      default: 2.5,
     },
     iconClass: {
-      type: String
+      type: String,
     },
     enabled: {
       type: Boolean,
-      default: true
-    }
+      default: true,
+    },
   },
   data() {
     return {
-      status: false
+      status: false,
     };
   },
   methods: {
@@ -31,14 +32,14 @@ export default {
       if (!this.enabled) return null;
       if (!screenfull.enabled) {
         this.$message({
-          message: "fullscreen can not work",
-          type: "warning"
+          message: 'fullscreen can not work',
+          type: 'warning',
         });
         return false;
       }
       screenfull.toggle();
-    }
-  }
+    },
+  },
 };
 </script>
 

@@ -14,7 +14,7 @@ export default [
     name: 'Home',
     component: Home,
     meta: {
-      icon: 'test',
+      icon: 'dashboard',
       title: 'home',
     },
   },
@@ -54,7 +54,7 @@ export default [
     name: 'permission',
     meta: {
       title: 'permission',
-      icon: 'test',
+      icon: 'user',
       roles: ['admin'],
     },
   },

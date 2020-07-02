@@ -6,8 +6,8 @@
 
 <script>
 export default {
-  name: 'HelloPage'
-}
+  name: 'HelloPage',
+};
 </script>
 
 <style lang="scsss" scoped>

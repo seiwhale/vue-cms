@@ -2,15 +2,15 @@
   <div class="sidebar-wrap">
     <template v-for="item in routerConfig" v-if="!item.hidden">
       <!-- 一级菜单 -->
-      <router-link 
+      <router-link
         v-if="!(item.children && item.children.length)"
         :key="item.name"
         :to="renderRouterPath(item.path)"
       >
         <el-menu-item :index="item.path">
           <icon
-            v-if="item.meta && item.meta.icon" 
-            :name="item.meta.icon" 
+            v-if="item.meta && item.meta.icon"
+            :name="item.meta.icon"
             :scale="2">
           </icon>
           <span slot="title"
@@ -21,12 +21,12 @@
       </router-link>
       <!-- 多级菜单 -->
       <el-submenu
-        v-else 
+        v-else
         class="sidebar-wrap__menu"
         :key="item.name"
         :index="item.name || item.path">
         <template slot="title">
-          <icon 
+          <icon
             v-if="item.meta && item.meta.icon"
             :name="item.meta.icon"
             :scale="2">
@@ -37,9 +37,9 @@
         </template>
         <template v-for="child in item.children" v-if="!child.hidden">
           <!-- 二级子菜单 -->
-          <sidebar-item 
-            v-if="child.children && child.children.length > 0" 
-            :routes="[child]" 
+          <sidebar-item
+            v-if="child.children && child.children.length > 0"
+            :routes="[child]"
             :key="child.path">
           </sidebar-item>
           <router-link
@@ -47,7 +47,7 @@
             :to="child.path"
             :key="child.name">
             <el-menu-item :index="child.path">
-              <icon 
+              <icon
                 v-if="child.meta && child.meta.icon"
                 :name="child.meta.icon"
                 :scale="2">
@@ -64,32 +64,33 @@
 </template>
 
 <script>
-import routerConfig from "../../router/routerConfig.js";
+import routerConfig from '../../router/routerConfig.js';
+
 export default {
-  name: "SidebarItem",
+  name: 'SidebarItem',
   data() {
     return {
       routerConfig,
     };
   },
-  computed:{
-     sliderState() {
-      return this.$store.getters.sidebar.sliderState
-    }
+  computed: {
+    sliderState() {
+      return this.$store.getters.sidebar.sliderState;
+    },
   },
   methods: {
     renderRouterPath(path) {
       if (!/^\//.test(path)) {
-        return "home" + path;
-      } else return path;
+        return `home${path}`;
+      } return path;
     },
     getTitle(title) {
       if (this.$te(`route.${title}`)) {
         return this.$t(`route.${title}`);
       }
       return title;
-    }
-  }
+    },
+  },
 };
 </script>
 

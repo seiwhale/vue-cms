@@ -1,15 +1,23 @@
-import Cookies from 'js-cookie';
-import { loginbyUser, logout, getUserInfo } from '../../api/login';
-import { setToken, removeToken } from '../..//utils/auth';
-import * as types from '../mutations';
+/*
+ * @Descripttion: Descripttion
+ * @Author: seiwhale
+ * @Date: 2020-07-02 14:56:42
+ * @LastEditors: seiwhale
+ * @LastEditTime: 2020-07-02 16:16:45
+ */
+
+import Cookies from "js-cookie";
+import { loginbyUser, logout, getUserInfo } from "../../api/login";
+import { setToken, removeToken } from "../..//utils/auth";
+import * as types from "../mutations";
 
 const user = {
   state: {
-    token: '',
+    token: "",
     roles: [],
-    name: '',
-    avatar: '',
-    introduction: '',
+    name: "",
+    avatar: "",
+    introduction: "",
   },
   mutations: {
     [types.SET_TOKEN]: (state, token) => {
@@ -33,10 +41,10 @@ const user = {
       return new Promise(async (resolve, reject) => {
         try {
           const response = await loginbyUser(username, password);
-          if (response.data) {
+          if (response.code === 0) {
             commit(types.SET_TOKEN, response.data.token);
             setToken(response.data.token);
-            Cookies.set('user', username);
+            Cookies.set("user", username);
           }
           resolve(response);
         } catch (error) {
@@ -49,7 +57,7 @@ const user = {
         try {
           await logout(state.token);
           commit(types.SET_ROLES, []);
-          Cookies.remove('user');
+          Cookies.remove("user");
           removeToken();
           resolve();
         } catch (error) {
@@ -59,7 +67,7 @@ const user = {
     },
     felogout({ commit }) {
       return new Promise((resolve) => {
-        commit(types.SET_TOKEN, '');
+        commit(types.SET_TOKEN, "");
         removeToken();
         resolve();
       });
@@ -67,10 +75,8 @@ const user = {
     getUserInfo({ commit }) {
       return new Promise(async (resolve, reject) => {
         try {
-          const response = await getUserInfo(Cookies.get('user'));
-          const {
-            roles, name, avatar, introduction,
-          } = response.data;
+          const response = await getUserInfo(Cookies.get("user"));
+          const { roles, name, avatar, introduction } = response.data;
           commit(types.SET_ROLES, roles);
           commit(types.SET_NAME, name);
           commit(types.SET_AVATAR, avatar);

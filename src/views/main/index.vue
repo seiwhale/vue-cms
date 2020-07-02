@@ -8,7 +8,7 @@
         <SideBar/>
       </el-aside>
       <el-main>
-        <TagView/>  
+        <TagView/>
         <section class="main">
           <transition name="fade" mode="out-in">
             <keep-alive>
@@ -24,20 +24,20 @@
 <script>
 import Header from '../../components/Header';  // eslint-disable-line
 import SideBar from '../../components/SideBar';
-import TagView from '../../components/tagView'
+import TagView from '../../components/tagView';
 
 export default {
   name: 'Main',
   data() {
     return {};
   },
-  computed:{
+  computed: {
     asideWidth() {
-      return this.$store.getters.getSliderStateWidth
-    }
+      return this.$store.getters.getSliderStateWidth;
+    },
   },
   components: {
-    Header,SideBar,TagView
+    Header, SideBar, TagView,
   },
 };
 </script>

@@ -16,30 +16,30 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
-import SidebarItem from "./sidebarItem.vue";
+import { mapGetters } from 'vuex';
+import SidebarItem from './sidebarItem.vue';
 
 export default {
-  name: "SideBar",
+  name: 'SideBar',
   data() {
     return {
-      bg: "#556d84",
-      tc: "#fff",
-      atc: "#41B883"
+      bg: '#556d84',
+      tc: '#fff',
+      atc: '#41B883',
     };
   },
-  computed:{
+  computed: {
     ...mapGetters(['sidebar']),
     isCollapse() {
-      return this.sidebar.sliderState !== 'full'
-    }
+      return this.sidebar.sliderState !== 'full';
+    },
   },
   components: {
-    SidebarItem
+    SidebarItem,
   },
-  mounted(){
+  mounted() {
     console.log(this.$route.path);
-  }
+  },
 };
 </script>
 

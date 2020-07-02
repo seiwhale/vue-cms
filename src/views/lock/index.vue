@@ -17,11 +17,11 @@
 
 <script>
 export default {
-  name: "lock",
+  name: 'lock',
   data() {
     return {
-      carouselHeight: "",
-      pwd: ""
+      carouselHeight: '',
+      pwd: '',
     };
   },
   created() {
@@ -29,15 +29,15 @@ export default {
   },
   methods: {
     unlock() {
-      if (this.pwd === "") {
-        this.$message.error("Please Enter Password!");
+      if (this.pwd === '') {
+        this.$message.error('Please Enter Password!');
       } else {
-        this.$message.success(this.$t("lock.unlock"));
-        this.$store.dispatch("setLockState", "unlock");
-        this.$router.push("/");
+        this.$message.success(this.$t('lock.unlock'));
+        this.$store.dispatch('setLockState', 'unlock');
+        this.$router.push('/');
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

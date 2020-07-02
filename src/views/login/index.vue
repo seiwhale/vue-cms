@@ -85,37 +85,38 @@
 </template>
 
 <script>
-import LanguageSetting from "../../components/LangSetting";
-import storage from "../../utils/storage";
+import LanguageSetting from '../../components/LangSetting';
+import storage from '../../utils/storage';
+
 const useRegexp = {
-  exist: /\S+/
+  exist: /\S+/,
 };
 export default {
-  name: "Login",
+  name: 'Login',
   data() {
     const validobj = {
       username: [
-        { ruleName: "exist", error: this.$t("login.valid.userexist") }
+        { ruleName: 'exist', error: this.$t('login.valid.userexist') },
       ],
-      password: [{ ruleName: "exist", error: this.$t("login.valid.pwdexist") }]
+      password: [{ ruleName: 'exist', error: this.$t('login.valid.pwdexist') }],
     };
 
     const _typeof = val =>
       Object.prototype.toString
         .call(val)
-        .replace(/^\S+\s/, "")
-        .replace(/]$/, "")
+        .replace(/^\S+\s/, '')
+        .replace(/]$/, '')
         .toLocaleLowerCase();
 
     const validfn = (rule, value, callback) => {
-      const _validobj = validobj[rule.field.replace(/^\S+(?=\.)\./g, "")];
+      const _validobj = validobj[rule.field.replace(/^\S+(?=\.)\./g, '')];
       for (let i = 0; i < _validobj.length; i++) {
-        let _rule = useRegexp[_validobj[i].ruleName];
-        if (_typeof(_rule) === "regexp") {
+        const _rule = useRegexp[_validobj[i].ruleName];
+        if (_typeof(_rule) === 'regexp') {
           if (!_rule.test(value)) {
             return callback(new Error(_validobj[i].error));
           }
-        } else if (_typeof(_rule) === "function") {
+        } else if (_typeof(_rule) === 'function') {
           if (_rule(value, _validobj[i].params)) {
             return callback(new Error(_validobj[i].error));
           }
@@ -124,15 +125,15 @@ export default {
       callback();
     };
 
-    const validPwdfn = (rule, value, callback)=> {
+    const validPwdfn = (rule, value, callback) => {
       if (value === '') {
-          callback(new Error('请再次输入密码'));
-        } else if (value !== this.forgetForm.newPassword) {
-          callback(new Error('两次输入密码不一致!'));
-        } else {
-          callback();
-        }
-    }
+        callback(new Error('请再次输入密码'));
+      } else if (value !== this.forgetForm.newPassword) {
+        callback(new Error('两次输入密码不一致!'));
+      } else {
+        callback();
+      }
+    };
 
     return {
       remember: true,
@@ -142,48 +143,48 @@ export default {
       notforget: true,
       // 登录表单
       loginForm: {
-        username: storage.get("loginUser") || "admin",
-        password: ""
+        username: storage.get('loginUser') || 'admin',
+        password: '',
       },
       rules: {
-        username: [{ validator: validfn, trigger: "blur", required: true }],
-        password: [{ validator: validfn, trigger: "blur", required: true }]
+        username: [{ validator: validfn, trigger: 'blur', required: true }],
+        password: [{ validator: validfn, trigger: 'blur', required: true }],
       },
       // 忘记密码
       forgetForm: {
-        email: "",
-        code: "",
-        newPassword: "",
-        confirmPassword: ""
+        email: '',
+        code: '',
+        newPassword: '',
+        confirmPassword: '',
       },
       forgetRules: {
-        email: [{ validator: validfn, trigger: "blur", required: true }],
-        code: [{ validator: validfn, trigger: "blur", required: true }],
-        newPassword: [{ validator: validfn, trigger: "blur", required: true }],
-        confirmPassword: [{ validator: validPwdfn, trigger: "blur"}],
+        email: [{ validator: validfn, trigger: 'blur', required: true }],
+        code: [{ validator: validfn, trigger: 'blur', required: true }],
+        newPassword: [{ validator: validfn, trigger: 'blur', required: true }],
+        confirmPassword: [{ validator: validPwdfn, trigger: 'blur' }],
       },
     };
   },
   computed: {
     translateLeft() {
       return {
-        "translate-left": true,
-        "switch-left": this.switchLeft
+        'translate-left': true,
+        'switch-left': this.switchLeft,
       };
     },
     translateRight() {
       return {
-        "translate-right": true,
-        "switch-right": this.switchLeft
+        'translate-right': true,
+        'switch-right': this.switchLeft,
       };
-    }
+    },
   },
   mounted() {
     this.$notify({
-      title: "登陆提示",
-      message: "用户名 admin 密码随意输入",
-      position: "top-left",
-      duration: 0
+      title: '登陆提示',
+      message: '用户名 admin 密码随意输入',
+      position: 'top-left',
+      duration: 0,
     });
   },
   methods: {
@@ -192,52 +193,52 @@ export default {
       this.switchRight = !this.switchRight;
       setTimeout(() => {
         this.notforget = state;
-        this.$refs[state ? "forgetForm" : "loginForm"].resetFields();
+        this.$refs[state ? 'forgetForm' : 'loginForm'].resetFields();
       }, 300);
     },
     handleLogin(formName) {
       this.loading = true;
-      this.$refs[formName].validate(async valid => {
+      this.$refs[formName].validate(async (valid) => {
         if (valid) {
           try {
-            let { username, password } = this.loginForm;
+            const { username, password } = this.loginForm;
             this.remember
               ? storage.set('loginUser', username)
-              : storage.remove('loginUser', username)
+              : storage.remove('loginUser', username);
             const response = await this.$store.dispatch('loginbyUser', {
               username: username.trim(),
-              password: password
-            })
-          console.log(response);
-            this.loading = false
-            if (response.data) {
-              this.$notify.closeAll()
-              this.$router.push({ path: '/' })
+              password,
+            });
+            console.log(response);
+            this.loading = false;
+            if (response.code === 0) {
+              this.$notify.closeAll();
+              this.$router.push({ path: '/' });
             } else {
               this.$message({
                 message: response.message,
                 type: 'error',
                 duration: 10000,
-                showClose: true
-              })
+                showClose: true,
+              });
             }
           } catch (error) {
-            throw new Error(error)
+            throw new Error(error);
           }
         } else {
           this.loading = false;
-          this.$message.error(this.$t("login.validfaild"));
+          this.$message.error(this.$t('login.validfaild'));
         }
       });
     },
     forgetHandle() {
-      this.$message.success(this.$t("login.pwdChanged"));
+      this.$message.success(this.$t('login.pwdChanged'));
       this.wrapSwitch(true);
-    }
+    },
   },
   components: {
-    LanguageSetting
-  }
+    LanguageSetting,
+  },
 };
 </script>
 

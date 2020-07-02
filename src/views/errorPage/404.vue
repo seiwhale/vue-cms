@@ -15,11 +15,11 @@ export default {
   methods: {
     returnPrevPage() {
       this.$router.push({
-        path: '/'
-      })
-    }
-  }
-}
+        path: '/',
+      });
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

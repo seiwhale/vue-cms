@@ -17,46 +17,47 @@
 </template>
 
 <script>
-const avatarUrl = require("../../assets/img/avatar.jpg");
+const avatarUrl = require('../../assets/img/avatar.jpg');
+
 export default {
-  name: "PersonalInfoDrop",
+  name: 'PersonalInfoDrop',
   data() {
     return {
-      username: "Admin",
-      avatarUrl
+      username: 'Admin',
+      avatarUrl,
     };
   },
   methods: {
     dropdownComm(command) {
       switch (command) {
-        case "logout":
+        case 'logout':
           this.logouthandle();
           break;
-        case "lock":
+        case 'lock':
           this.lockhandle();
           break;
-        case "profile":
+        case 'profile':
           this.jumpToProfile();
           break;
       }
     },
     async logouthandle() {
-      await this.$store.dispatch("logout");
+      await this.$store.dispatch('logout');
       window.location.reload();
     },
     lockhandle() {
-      this.$store.dispatch("setLockState", "lock");
+      this.$store.dispatch('setLockState', 'lock');
       this.$router.push({
-        path: "/lock"
+        path: '/lock',
       });
-      this.$message.success(this.$t("lock.locked"));
+      this.$message.success(this.$t('lock.locked'));
     },
     jumpToProfile() {
       this.$router.push({
-        path: "/profile"
+        path: '/profile',
       });
-    }
-  }
+    },
+  },
 };
 </script>
 

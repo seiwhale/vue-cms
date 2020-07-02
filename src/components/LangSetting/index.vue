@@ -14,19 +14,19 @@
 export default {
   name: 'LanguageSetting',
   computed: {
-    
+
   },
   methods: {
     handleCommand(lang) {
-      this.$i18n.locale = lang
-      this.$store.dispatch('setLanguage', lang)
-      const message = this.$t('app.switchlang')
+      this.$i18n.locale = lang;
+      this.$store.dispatch('setLanguage', lang);
+      const message = this.$t('app.switchlang');
       this.$message({
         message,
-        type: 'success'
-      })
-    }
-  }
+        type: 'success',
+      });
+    },
+  },
 };
 </script>
 

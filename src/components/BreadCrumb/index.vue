@@ -17,10 +17,10 @@
 
 <script>
 export default {
-  name: "BreadCrumb",
+  name: 'BreadCrumb',
   data() {
     return {
-      list: null
+      list: null,
     };
   },
   created() {
@@ -29,15 +29,13 @@ export default {
   watch: {
     $route() {
       this.getBreadcrumb();
-    }
+    },
   },
   methods: {
     getBreadcrumb() {
       let matched = this.$route.matched.filter(item => item.name);
-      if (matched[0] && matched[0].name !== "Home") {
-        matched = [{ path: "/home", meta: { title: "home" } }].concat(
-          matched
-        );
+      if (matched[0] && matched[0].name !== 'Home') {
+        matched = [{ path: '/home', meta: { title: 'home' } }].concat(matched);
       }
       this.list = matched;
     },
@@ -46,8 +44,8 @@ export default {
         return this.$t(`route.${title}`);
       }
       return title;
-    }
-  }
+    },
+  },
 };
 </script>
 
