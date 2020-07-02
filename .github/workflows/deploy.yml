@@ -1,6 +1,10 @@
 name: Build and Deploy
 on: [push]
 jobs:
+  install-vue:
+    steps:
+      - name: Vue 🚧
+        run: npm install @vue/cli -g
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
