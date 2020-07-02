@@ -28,7 +28,8 @@
     "vue-router": "^3.0.1",
     "vue-seamless-scroll": "^1.1.16",
     "vue-svg-icon": "^1.2.9",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "webpack": "^4.43.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.4.0",
