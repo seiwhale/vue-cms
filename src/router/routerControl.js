@@ -1,3 +1,10 @@
+/*
+ * @Descripttion: Descripttion
+ * @Author: seiwhale
+ * @Date: 2020-07-02 14:56:42
+ * @LastEditors: seiwhale
+ * @LastEditTime: 2020-07-02 22:35:41
+ */ 
 /* eslint-disable no-lonely-if */
 import nprogress from 'nprogress';
 import 'nprogress/nprogress.css';
@@ -60,6 +67,7 @@ router.beforeEach(async (to, from, next) => {
     if (whiteList.indexOf(to.path) !== -1) {
       next();
     } else {
+      console.log(2222)
       next('/login');
       nprogress.done(); // 如果当前页是 login 则路由不会触发 after 钩子函数，需要手动处理
     }
