@@ -32,14 +32,14 @@
     "webpack": "^4.43.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.4.0",
-    "@vue/cli-plugin-eslint": "^3.0.3",
-    "@vue/cli-plugin-pwa": "^3.0.3",
-    "@vue/cli-service": "^3.0.3",
-    "@vue/eslint-config-airbnb": "^3.0.4",
+    "@vue/cli-plugin-babel": "3.4.0",
+    "@vue/cli-plugin-eslint": "3.0.3",
+    "@vue/cli-plugin-pwa": "3.0.3",
+    "@vue/cli-service": "3.0.3",
+    "@vue/eslint-config-airbnb": "3.0.4",
     "gh-pages": "^3.1.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "2.5.17"
   }
 }
