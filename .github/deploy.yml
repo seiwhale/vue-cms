@@ -1,0 +1,24 @@
+name: Deploy Action
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build_job:
+    name: Build Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build
+      run:
+        npm run build
+  deploy_job:
+    name: Dploy Job
+    needs: build_job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy
+      run:
+        npm run deploy
+
