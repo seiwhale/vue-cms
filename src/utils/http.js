@@ -3,7 +3,7 @@
  * @Author: seiwhale
  * @Date: 2020-07-02 14:56:42
  * @LastEditors: seiwhale
- * @LastEditTime: 2020-07-02 15:57:44
+ * @LastEditTime: 2020-07-03 11:05:57
  */
 import axios from 'axios';
 import store from '@/store';
@@ -11,7 +11,7 @@ import { getToken } from '@/utils/auth';
 import * as tools from './tools';
 
 const http = axios.create({
-  baseURL: 'http://47.101.192.248:7300/mock/5efd8e663aee0200211cd13f',
+  baseURL: 'https://47.101.192.248:7300/mock/5efd8e663aee0200211cd13f',
   timeout: 30000,
 });
 
